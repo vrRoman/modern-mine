@@ -1,0 +1,29 @@
+@import size-and-colors
+.button, button
+    width: 10rem
+    height: 6.25vw
+    border: 3px solid #ffffff
+    border-radius: 10px
+    box-sizing: border-box
+    background-color: transparent
+    font-weight: 600
+    font-style: italic
+    font-size: $main_size
+    color: $text_color
+    z-index: 1
+    transition: all 200ms
+    letter-spacing: 0.1em
+    position: relative
+    cursor: pointer
+    &:hover
+        background-color: #fff
+        color: $bg-color
+        box-shadow: 0 0 80px #fff
+    a
+        color: inherit
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        text-decoration: none

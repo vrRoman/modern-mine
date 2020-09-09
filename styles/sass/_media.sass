@@ -1,0 +1,88 @@
+@media screen and (max-width: 1860px)
+    html
+        font-size: 40px
+@media screen and (max-width: 1700px)
+    html
+        font-size: 35px
+@media screen and (max-width: 1490px)
+    html
+        font-size: 30px
+@media screen and (max-width: 1024px)
+    html
+        font-size: 25px
+    .start-block__arrow
+        width: 2rem
+        height: 2rem
+    .start-block__menu-buttons
+        height: 35%
+@media screen and (max-width: 830px)
+    .start-block__menu-buttons
+        width: unset
+        .button
+            width: 9rem
+        &:after
+            display: none
+    .start-block__text
+        width: 16rem
+    .text__note
+        width: 80%
+@media screen and (max-width: 700px)
+    .text__subhead
+        display: none
+
+
+@media screen and (max-width: 600px)
+    body, html
+        overflow-x: hidden
+    html
+        font-size: 25px
+    .start-block
+        height: unset
+    .start-block__background
+        width: unset
+        left: -110%
+
+    .start-block__text
+        width: 100%
+        margin-bottom: 70%
+        margin-top: 30%
+        &:before
+            width: 86vw
+            top: -5%
+    .text__note
+        padding: 0
+    .start-block__arrow
+        display: none
+    .button_about
+        display: none
+    .start-block__menu-buttons
+        height: 25%
+        width: 100%
+        position: absolute
+        right: unset
+        bottom: 5%
+        top: unset
+        .button
+            height: 45%
+            margin: auto
+        &:after
+            display: none
+
+    .about__item
+        flex-direction: column
+        margin-top: 1em
+    .item__text
+        position: relative
+        width: 100%
+        margin: 0
+    .item__img
+        position: relative
+        float: none
+        width: 100%
+    .text__subhead
+        display: block
+
+@media screen and (max-width: 400px)
+    .start-block__text
+        &:before
+            top: 0

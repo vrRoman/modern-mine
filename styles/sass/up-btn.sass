@@ -1,0 +1,40 @@
+@import size-and-colors
+
+.up-btn
+    width: 75px
+    height: 75px
+    border: 2px solid $text_color
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    right: 5%
+    bottom: 5%
+    transition: opacity 400ms, visibility 400ms, background-color 200ms
+    &:hover
+        background-color: $text_color
+        box-shadow: 0 0 25px #fff
+        .up-btn__arrow
+            border: solid $bg_color
+            border-width: 0 7px 7px 0
+
+.up-btn__arrow
+    border: solid $text_color
+    border-width: 0 7px 7px 0
+    display: inline-block
+    padding: 12px
+    transform: rotate(-135deg)
+    margin-top: 7px
+    
+.up-btn_disabled
+    opacity: 0
+    visibility: hidden
+
+@media screen and (max-width: 1024px)
+    .up-btn
+        width: 50px
+        height: 50px
+    .up-btn__arrow
+        padding: 10px
+        border-width: 0 5px 5px 0

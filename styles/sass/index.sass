@@ -1,0 +1,154 @@
+@import fonts
+@import size-and-colors
+
+*
+    padding: 0
+    margin: 0
+
+html
+    font-family: 'OpenSans', sans-serif
+    font-size: 45px
+
+body
+    background-color: $bg_color
+    min-width: 300px
+
+@import header
+
+.header
+    .header__nav
+        width: 20%
+.mobile-nav
+    ul
+        height: 30%
+        top: 20%
+
+@import button
+
+.start-block
+    width: 100%
+    height: 100vh
+    position: relative
+
+    display: flex
+    align-items: center
+.start-block__background
+    height: 100%
+    width: 100%
+    position: absolute
+
+.start-block__text
+    position: relative
+    margin-left: 7%
+    margin-bottom: 3rem
+    width: 17rem
+    height: 43%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &:before
+        content: ''
+        position: absolute
+        top: -15%
+        width: 100%
+        height: 3px
+        background-color: $text_color
+    h1, h4, h2
+        margin-top: 0.1rem
+
+.text__headline
+    font-size: $title_size
+    color: $text_color
+    font-weight: bold
+.text__note
+    color: #6379a6
+    width: 100%
+    padding-left: 15%
+    font-weight: 600
+    font-size: $sec-text_size
+.text__subhead
+    font-size: $main_size
+    font-weight: bold
+    color: $text_color
+.text__smile
+    white-space: nowrap
+
+.button_about
+    position: absolute
+    width: 18vw
+    bottom: 5%
+    left: 7%
+
+.start-block__menu-buttons
+    text-align: right
+    position: relative
+    right: 3.5%
+    display: inline-flex
+    flex-direction: column
+    justify-content: space-between
+    height: 42%
+    width: 34%
+    margin: 0 3.5% 0 auto
+    &:after
+        content: ''
+        height: 120%
+        width: 3px
+        position: absolute
+        right: 0
+        background-color: #fff
+        top: 50%
+        transform: translateY(-50%)
+.start-block__arrow
+    height: 74px
+    width: 72px
+    bottom: 0
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    transition: transform 200ms
+    &:hover
+        transform: translateX(-50%) scale(1.15)
+
+
+
+.about
+    margin: 0 auto
+    position: relative
+    width: 93%
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+.about__item
+    position: relative
+    width: 100%
+    display: flex
+    align-items: center
+    margin-top: 4em
+    &:last-child
+        margin-bottom: 10%
+.item__img
+    width: 33%
+.item__text
+    margin-right: 3.7%
+    color: $text_color
+    font-size: 0.9em
+    position: absolute
+    right: 0
+    width: 60%
+
+.about__item_middle .item__img
+    float: right
+    margin-left: auto
+.about__item_middle .item__text
+    margin: 0 0 0 3.7%
+    left: 0
+
+
+
+
+
+@import footer
+
+@import up-btn
+
+@import media

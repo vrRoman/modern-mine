@@ -1,0 +1,158 @@
+@import fonts
+@import size-and-colors
+html
+    font-family: 'OpenSans', sans-serif
+    font-size: 45px
+    color: $text_color
+body
+    background-color: $bg_color
+    min-height: 100vh
+    min-width: 300px
+    display: flex
+    flex-direction: column
+
+
+main
+    padding-top: 4.4vw
+    flex: 1 0 auto
+
+*
+    padding: 0
+    margin: 0
+
+@import header
+
+@import button
+
+.not-found
+    padding-top: 10rem
+    text-align: center
+
+.item
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 1rem 7%
+    box-sizing: border-box
+
+
+.item__title
+    font-size: $main-size
+    letter-spacing: 0.05em
+    text-align: center
+
+.item__img
+    width: 15rem
+    border: 3px solid $text_color
+    margin: 1rem 0
+.item__add-info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    margin-top: 1rem
+    position: relative
+
+.item__rating
+    width: 30%
+    position: absolute
+    left: 50 - 12.5%
+    .rating
+        height: 1.24rem
+        width: 100%
+        display: flex
+    .rating__item
+        width: 1.5rem
+        height: 1.5rem
+        margin-left: 5%
+        box-sizing: border-box
+        background-repeat: no-repeat
+        div
+            background-repeat: no-repeat
+        &:first-child
+            margin: 0
+
+.rating__active-item
+    border-radius: 50%
+    border: 1px solid $text_color
+    overflow: hidden
+
+.item__button
+    margin-top: 1rem
+
+
+.confirm
+    position: fixed
+    width: 15rem
+    height: 5rem
+    right: 0
+    bottom: 5%
+    background-color: #282c34
+    border: 1px solid $text_color
+    overflow: hidden
+    z-index: 10
+.confirm__title
+    text-align: center
+    margin-top: 2%
+.confirm__agree, .confirm__refuse
+    width: 25%
+    height: 25%
+    position: absolute
+    bottom: 10%
+    font-size: $sec-text_size
+.confirm__agree
+    left: 20%
+.confirm__refuse
+    right: 20%
+
+
+@import footer
+footer
+    position: absolute
+    bottom: 0
+    flex: 0 0 auto
+
+@media screen and (max-width: 1860px)
+    html
+        font-size: 40px
+@media screen and (max-width: 1700px)
+    html
+        font-size: 35px
+@media screen and (max-width: 1490px)
+    html
+        font-size: 30px
+@media screen and (max-width: 1024px)
+    html
+        font-size: 25px
+    main
+        padding-top: 10vh
+    .button
+        height: 2rem
+    .confirm
+        width: 100%
+        bottom: 0
+@media screen and (max-width: 800px)
+    .item__add-info
+        padding-bottom: 1rem
+    .item__rating
+        bottom: -0.5rem
+        left: 0
+        width: 50%
+
+
+@media screen and (max-width: 600px)
+    body, html
+        overflow-x: hidden
+    html
+        font-size: 25px
+
+@media screen and (max-width: 400px)
+    .item__img
+        width: 100%
+    .item__button
+        width: 100%
+
+@media screen and (max-width: 350px)
+    .item__add-info
+        display: block

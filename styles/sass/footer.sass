@@ -1,0 +1,92 @@
+@import size-and-colors
+.footer
+    width: 100%
+    min-height: 12vw
+    background-color: $sub-bg_color
+    display: flex
+    color: $text_color
+    font-size: $text_size
+    position: relative
+    &:before
+        content: ''
+        height: 3px
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: #fff
+.footer__section
+    width: 32.5%
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+.footer__section_center
+    width: 35%
+    box-sizing: border-box
+    &:after
+        content: ''
+        width: 2px
+        height: 65%
+        background-color: #fff
+        position: absolute
+        left: 0
+    &:before
+        content: ''
+        width: 2px
+        height: 65%
+        background-color: #fff
+        position: absolute
+        right: 0
+
+.section__head
+    font-weight: 600
+    padding-left: 8%
+.section__info
+    text-align: center
+    margin-top: 1%
+    a
+        text-decoration: none
+        color: inherit
+        position: relative
+        &:after
+            content: ''
+            height: 1px
+            width: calc(100% + 4px)
+            position: absolute
+            bottom: -2px
+            left: -4px
+            background-color: $text_color
+            transform: scale(0)
+            transition: transform 300ms
+        &:hover
+            &:after
+                transform: scale(1)
+.footer__section_center .section__head
+    padding-left: 20%
+
+
+@media screen and (max-width: 600px)
+    .footer
+        flex-direction: column
+    .footer__section
+        margin: 5% 0
+        width: 100%
+        align-items: center
+        .section__head
+            padding: 0
+        &:nth-child(3)
+            margin: 0 0 5% 0
+    .footer__section_center
+        padding: 5%
+        &:after
+            width: 86%
+            height: 1px
+            left: unset
+            top: 0
+        &:before
+            width: 86%
+            height: 1px
+            right: unset
+            bottom: 0
+

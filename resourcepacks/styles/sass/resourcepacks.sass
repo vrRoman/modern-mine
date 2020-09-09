@@ -1,0 +1,254 @@
+@import "../../../styles/sass/size-and-colors"
+
+*
+    padding: 0
+    margin: 0
+
+html
+    font-family: 'OpenSans', sans-serif
+    font-size: 45px
+    color: $text-color
+body
+    background-color: $bg_color
+    min-width: 300px
+a
+    text-decoration: none
+    color: $text-color
+h1
+    font-size: $title_size
+h3
+    font-size: $text_size
+
+@import "../../../styles/sass/header"
+@import "../../../styles/sass/button"
+
+main
+    padding-top: 4.4vw
+    min-height: 80vh
+
+.title
+    margin-top: 6vw
+    position: relative
+    color: $text_color
+    display: inline-block
+    &:before
+        content: ''
+        position: absolute
+        top: -40%
+        left: 0
+        width: 120%
+        height: 3px
+        background-color: $text_color
+
+main
+    width: 100 - 14%
+    max-width: 1651px
+    margin: 0 auto
+.items
+    width: 100%
+    margin-top: 4%
+.items__item
+    width: 100%
+    margin:  0 auto 10% auto
+    font-size: $sec-text_size
+    color: $text_color
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    img
+        width: 30%
+        max-height: 90%
+        position: absolute
+        border: 2px solid white
+    p
+        width: 60%
+        margin-left: auto
+        padding: 2% 0
+    button
+        margin: auto 0 0 40%
+        width: 7rem
+        height: 15%
+        font-size: $text_size
+        &:hover a
+            color: $bg-color
+    span
+        position: absolute
+        right: 0
+        bottom: 0
+        font-size: $sec-text_size
+        color: $sub-text_color
+        max-width: 187px
+        text-align: right
+    a
+        text-decoration: none
+        color: $text_color
+    h3
+        margin-left: 40%
+
+    .views
+        position: absolute
+        bottom: -0.5rem
+        left: 17%
+        padding: 0
+
+
+form
+    position: relative
+    font-size: $sec-text_size
+    color: $text_color
+    margin-top: 1%
+    span
+        color: #6379a6
+    label
+        margin-left: 3%
+        color: $sub-text_color
+    .any
+        color: $text_color
+
+.form__categories
+    margin: 2% 0 2% 0
+
+
+.form__submit
+    width: 10%
+    height: 10%
+    font-size: $sec-text_size
+    margin-top: 2%
+.form__button_search
+    float: right
+
+
+.form__search
+    font-size: $main_size
+    display: inline-block
+    height: 30%
+    position: relative
+    width: 11rem
+    input
+        background-color: transparent
+        border: none
+        border-bottom: 3px solid $text-color
+        font-size: $sec-text_size
+        margin-left: 7%
+        height: 100%
+        color: $sub-text_color
+        width: 70%
+        bottom: 10%
+        position: absolute
+
+
+    label
+        color: $text_color
+        margin: 0
+
+.form__sorting
+    position: relative
+    display: inline-block
+    width: 11rem
+    margin-left: 5%
+    select
+        cursor: pointer
+        width: 50%
+        color: $text-color
+        font-size: $sec-text_size
+        border: 0
+        background-color: transparent
+        -webkit-appearance: none
+        margin-left: 1%
+        z-index: 1
+        position: relative
+        text-align: center
+        padding-right: 10%
+
+.sorting__arrow
+    border: solid $text_color
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: 6px
+    transform: rotate(45deg)
+    position: absolute
+    right: 7%
+    margin-top: 3%
+
+.rating
+    display: flex
+    height: 0.5rem
+    width: 10%
+    position: absolute
+    bottom: -0.3rem
+.rating__item
+    width: 20%
+    margin-left: 5%
+    background-repeat: no-repeat
+    div
+        background-repeat: no-repeat
+
+
+.pages
+    display: flex
+    justify-content: center
+    color: $text-color
+    font-size: $text-size
+    margin: 4% auto
+    a
+        margin: 0 1.5%
+
+.flip-far-left, .flip-one-left, .flip-far-right, .flip-one-right
+    border: solid $text_color
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: 10px
+    width: 10px
+    height: 10px
+    margin-top: 1%
+
+.flip-far-left, .flip-one-left
+    transform: rotate(135deg)
+
+.flip-far-right, .flip-one-right
+    transform: rotate(-45deg)
+
+.flip-far-left, .flip-far-right
+    position: relative
+    div
+        border: solid $text_color
+        border-width: 0 3px 3px 0
+        display: inline-block
+        padding: 10px
+        width: 10px
+        height: 10px
+        position: absolute
+
+.no-matches
+    color: $text-color
+    font-size: $main-size
+    text-align: center
+    padding-top: 5%
+.show-form, .close-form
+    display: none
+    margin-top: 5%
+    padding: 0 14%
+    box-sizing: border-box
+    width: 100%
+    position: relative
+
+.switch-form__arrow
+    border: solid $text_color
+    border-width: 0 4px 4px 0
+    display: inline-block
+    padding: 8px
+    transform: rotate(45deg)
+    position: absolute
+    right: 14%
+    bottom: 40%
+.close-form__arrow
+    transform: rotate(225deg)
+
+@import "../../../styles/sass/up-btn"
+
+@import "../../../styles/sass/footer"
+
+@import "media"
+
+

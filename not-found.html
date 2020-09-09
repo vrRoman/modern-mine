@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Элемент не найден</title>
+  <link rel="stylesheet" href="../styles/itemPage.min.css">
+  <link rel="shortcut icon" href="../img/cube.svg" type="image/svg">
+</head>
+
+<body>
+<header class="header header_transparent">
+  <a class="header__logo" href="../">
+    <img src="../img/logo.svg" alt="logo">
+  </a>
+
+  <div class="header__nav">
+    <ul>
+      <li>
+        <a href="../">
+          Главная
+        </a>
+      </li>
+      <li class="header__active-link"><a href="../resourcepacks">
+        Ресурспаки
+      </a></li>
+      <li><a href="../mods">
+        Моды
+      </a></li>
+    </ul>
+  </div>
+  <div class="header__burger" onclick="document.querySelector('.mobile-nav').style.visibility = 'visible'">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+<div class="mobile-nav">
+  <ul>
+    <li>
+      <a href="../">
+        Главная
+      </a>
+    </li>
+    <li><a href="">
+      Ресурспаки
+    </a></li>
+    <li><a href="../mods">
+      Моды
+    </a></li>
+  </ul>
+  <div class="mobile-nav__close" onclick="document.querySelector('.mobile-nav').style.visibility='hidden'"></div>
+</div>
+
+<main>
+  <p class="not-found">Элемент не найден</p>
+</main>
+
+
+<footer class="footer">
+  <div class="footer__section">
+    <h3 class="section__head">Контакты</h3>
+    <p class="section__info">awdadaa/aodja</p>
+    <p class="section__info">awdvagd/djvh</p>
+  </div>
+  <div class="footer__section footer__section_center">
+    <h3 class="section__head">Мы в ВК:</h3>
+    <p class="section__info"><a href="#">vk.com/123123</a></p>
+  </div>
+  <div class="footer__section">
+    <p class="section__info"><a href="../resourcepacks">Ресурспаки</a></p>
+    <p class="section__info"><a href="../mods">Моды</a></p>
+  </div>
+</footer>
+
+<script src="../js/header.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+"use strict";!function(){var e=document.querySelector(".header"),t=document.querySelector(".start-block"),o=t?t.clientHeight:0;document.addEventListener("scroll",function(){document.documentElement.scrollTop>o?e.style.backgroundColor="#282c34":e.style.backgroundColor="#303642",window.scrollY<e.clientHeight&&(e.style.backgroundColor="transparent")})}();

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ModernMine</title>
+    <link rel="stylesheet" href="styles/index.min.css">
+    <link rel="shortcut icon" href="img/cube.svg" type="image/svg">
+  </head>
+  <body>
+    <header class="header header_transparent">
+      <a class="header__logo" href="">
+        <img src="img/logo.svg" alt="logo">
+      </a>
+
+      <div class="header__nav">
+        <ul>
+          <li><a href="resourcepacks">
+                Ресурспаки
+          </a></li>
+          <li><a href="mods">
+                Моды
+          </a></li>
+        </ul>
+      </div>
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <div class="mobile-nav">
+      <ul>
+        <li><a href="resourcepacks">
+          Ресурспаки
+        </a></li>
+        <li><a href="mods">
+          Моды
+        </a></li>
+      </ul>
+      <div class="mobile-nav__close"></div>
+    </div>
+
+    <main>
+      <div class="start-block">
+        <img src="img/start-block.jpg" alt="bg-img" class="start-block__background">
+
+        <div class="start-block__text text">
+          <h1 class="text__headline">Лучший ресурс для Minecraft</h1>
+          <h4 class="text__note">Все предоставляемые файлы тщательно проверяются на вирусы!</h4>
+          <h2 class="text__subhead">Приятного поиска <span class="text__smile">ヾ(⌐■_■)ノ</span></h2>
+        </div>
+
+        <button class="button button_about"><a href="#about">О нас</a></button>
+        <a href="#about">
+          <img src="img/arrow.svg" alt="arrow" class="start-block__arrow">
+        </a>
+        
+        <div class="start-block__menu-buttons">
+          <button class="button"><a href="resourcepacks">Ресурспаки</a></button>
+          <button class="button"><a href="mods">Моды</a></button>
+        </div>
+      </div>
+
+
+      <div id="about" class="about">
+        <div class="about__item">
+          <img class="item__img" src="img/mine-img1.jpg" alt="img">
+          <p class="item__text">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Integer neque ligula,
+            tincidunt non cursus quis, tincidunt sit amet risus.
+            Suspendisse placerat sagittis semper. Donec a elit
+            sapien. Donec justo ligula, feugiat sed ultrices non,
+            volutpat sit amet elit.
+          </p>
+        </div>
+        <div class="about__item about__item_middle">
+          <img class="item__img" src="img/mine-img2.jpg" alt="img">
+          <p class="item__text">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Integer neque ligula,
+            tincidunt non cursus quis, tincidunt sit amet risus.
+            Suspendisse placerat sagittis semper. Donec a elit
+            sapien. Donec justo ligula, feugiat sed ultrices non,
+            volutpat sit amet elit.
+          </p>
+        </div>
+        <div class="about__item">
+          <img class="item__img" src="img/mine-img3.jpg" alt="img">
+          <p class="item__text">
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Integer neque ligula,
+            tincidunt non cursus quis, tincidunt sit amet risus.
+            Suspendisse placerat sagittis semper.
+          </p>
+        </div>
+      </div>
+    </main>
+
+
+    <a href="#">
+      <div class="up-btn up-btn_disabled">
+        <div class="up-btn__arrow"></div>
+      </div>
+    </a>
+
+
+
+    <footer class="footer">
+      <div class="footer__section">
+        <h3 class="section__head">Контакты</h3>
+        <p class="section__info">awdadaa/aodja</p>
+        <p class="section__info">awdvagd/djvh</p>
+      </div>
+      <div class="footer__section footer__section_center">
+        <h3 class="section__head">Мы в ВК:</h3>
+        <p class="section__info"><a href="#">vk.com/123123</a></p>
+      </div>
+      <div class="footer__section">
+        <p class="section__info"><a href="">Ресурспаки</a></p>
+        <p class="section__info"><a href="">Моды</a></p>
+      </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/up-btn.js"></script>
+    <script src="js/smooth-anchors.js"></script>
+    <script>
+      let burger = document.querySelector('.header__burger')
+        , mobileNav = document.querySelector('.mobile-nav')
+        , closeMobileNav = mobileNav.querySelector('.mobile-nav__close')
+      burger.onclick = () => {
+        mobileNav.style.visibility = 'visible'
+      }
+      closeMobileNav.onclick = () => {
+        mobileNav.style.visibility = 'hidden'
+      }
+    </script>
+  </body>
+</html>
